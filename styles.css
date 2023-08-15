@@ -238,3 +238,24 @@ a {
 }
 
 /* ... الأنماط السابقة ... */
+/* ... الأنماط السابقة ... */
+
+/* Download Button */
+.download-button {
+  display: inline-block;
+  background-color: #1E3A56;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.download-button:hover {
+  background-color: #104269;
+}
+
+/* ... الأنماط السابقة ... */

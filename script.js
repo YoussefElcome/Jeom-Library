@@ -1,29 +1,29 @@
-const loginLink = document.getElementById("login");
-const logoutLink = document.getElementById("logout");
+const loginLink = document.getElementById('loginLink');
+const closeLoginModal = document.getElementById('closeLoginModal');
+const loginModal = document.getElementById('loginModal');
+const loginForm = document.getElementById('loginForm');
 
-// تمثيل حالة تسجيل الدخول (هنا يتم استخدام متغير مؤقت)
-let isLoggedIn = false;
-
-loginLink.addEventListener("click", () => {
-  if (!isLoggedIn) {
-    // تسجيل الدخول
-    isLoggedIn = true;
-    alert("تم تسجيل الدخول بنجاح!");
-    loginLink.style.display = "none";
-    logoutLink.style.display = "inline";
-  } else {
-    alert("أنت بالفعل مسجل الدخول!");
-  }
+loginLink.addEventListener('click', () => {
+    loginModal.style.display = 'block';
 });
 
-logoutLink.addEventListener("click", () => {
-  if (isLoggedIn) {
-    // تسجيل الخروج
-    isLoggedIn = false;
-    alert("تم تسجيل الخروج بنجاح!");
-    logoutLink.style.display = "none";
-    loginLink.style.display = "inline";
-  } else {
-    alert("أنت بالفعل مسجل الخروج!");
-  }
+closeLoginModal.addEventListener('click', () => {
+    loginModal.style.display = 'none';
+});
+
+loginForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // Check credentials and perform login logic here
+    // For simplicity, you can hardcode a username and password
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if (username === 'user' && password === 'password') {
+        alert('Login successful!');
+        loginModal.style.display = 'none';
+        loginLink.textContent = 'Logout';
+        loginLink.href = '#';
+    } else {
+        alert('Login failed. Please check your credentials.');
+    }
 });
