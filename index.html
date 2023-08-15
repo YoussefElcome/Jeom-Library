@@ -10,23 +10,35 @@
   <header>
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="library.html">Books</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="#" id="login">Login</a></li>
         <li><a href="#" id="logout" style="display: none;">Logout</a></li>
-        <!-- ... الجزء السابق من ملف HTML ... -->
-        <li><a href="#" id="login">تسجيل دخول</a></li>
-        <li><a href="#" id="logout" style="display: none;">تسجيل خروج</a></li>
-<!-- ... الجزء الباقي من ملف HTML ... -->
-
       </ul>
     </nav>
   </header>
   
   <main>
     <h1>Welcome to our Library</h1>
-    <p>Explore our collection of books...</p>
+    <div class="featured-books">
+      <div class="book">
+            <a href="رحلتي من الشك الى الإيمان.html">
+              <img src="رحلتي من الشك الى الإيمان.jfif" alt="Book 1">
+              <h3>رحلتي من الشك الإيمان</h3>
+              <p>المؤلف : د . مصطفي محمود</p>
+            </a>
+      </div>
+      <div class="book">
+        <a href="book.html">
+          <img src="اينشتين والنسبية.jpg" alt="Book 1">
+          <h3>اينشتين والنسبية</h3>
+          <p>المؤلف : د . مصطفي محمود</p>
+        </a>
+      </div>
+    </div>
+        <a href="library.html" class="nav-button" dir="ltr">تصفح المكتبة</a>
   </main>
   <script src="script.js"></script>
 </body>
