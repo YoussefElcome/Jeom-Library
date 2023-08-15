@@ -1,0 +1,45 @@
+/* Import other styles */
+@import "styles.css";
+@import "buttons.css";
+@import "books.css";
+@import "navigation.css";
+@import "forms.css";
+@import "responsive.css";
+.services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .service {
+    flex-basis: calc(33.33% - 1rem);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .service:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .service p {
+    font-size: 1rem;
+    color: #666;
+  }
